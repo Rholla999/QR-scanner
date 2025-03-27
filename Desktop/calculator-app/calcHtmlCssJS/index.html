@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -12,22 +13,17 @@
         <h2>Calculator App</h2>
         <div class="calc-head">
             <label for="number">
-                Calc-Display:
-                <input type="text" id="display" class="display">
-                <!-- <input type="number" id="display2"> -->
+                <input type="text" id="display" class="display" disabled>
             </label>
         </div>
-        <div class="calc-controls">
+        <div class="calc-body">
              <button type="button" data-key="+" class="opp">+</button>
             <button type="button" data-key="-" class="opp">-</button>
             <button type="button" data-key="/" class="opp">/</button>
             <button type="button" data-key="*" class="opp">*</button>
             <button type="button" data-key="=" class="equal" id="equal">=</button>
             <button type="button"  class="clear" id="clear">Clear</button>
-            <button type="button"  data-key="x" class="btn del" id="del">x</button>
-        </div>
-        <div class="calc-body">
-           
+            <button type="button"  data-key="x" class="btn del" id="del"><i class="fa-solid fa-delete-left"></i></button> 
 
             <button type="button" data-key="1" class="btn">1</button>
             <button type="button" data-key="2" class="btn">2</button>
